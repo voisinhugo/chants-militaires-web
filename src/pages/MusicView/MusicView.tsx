@@ -3,12 +3,13 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import songs from "../../data";
 import theme from "../../theme";
-import { Header } from "../../components";
+import { Header, HEADER_HEIGHT } from "../../components/Header/Header";
 
 const Container = styled.div`
   background-color: ${theme.color.background};
   display: flex;
   flex-grow: 1;
+  padding-top: ${HEADER_HEIGHT}px;
 `;
 
 const Lyrics = styled.p`
