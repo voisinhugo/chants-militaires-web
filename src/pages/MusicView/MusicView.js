@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import songs from "../../data";
 import theme from "../../theme";
@@ -20,13 +21,13 @@ const Lyrics = styled.p`
 `;
 
 export const MusicView = ({ match }) => {
-  const musicId = match.params.songId;
+  const { songId } = useParams();
 
   return (
     <>
-      <Header title={songs[musicId].title} />
+      <Header title={songs[songId].title} />
       <Container>
-        <Lyrics>{songs[musicId].lyrics}</Lyrics>
+        <Lyrics>{songs[songId].lyrics}</Lyrics>
       </Container>
     </>
   );
