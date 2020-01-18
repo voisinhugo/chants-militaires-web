@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/chants-militaires-web/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/chants-militaires-web/static/js/main.b9987a5a.chunk.js",
-    "main.js.map": "/chants-militaires-web/static/js/main.b9987a5a.chunk.js.map",
+    "main.js": "/chants-militaires-web/static/js/main.df2742e0.chunk.js",
+    "main.js.map": "/chants-militaires-web/static/js/main.df2742e0.chunk.js.map",
     "runtime-main.js": "/chants-militaires-web/static/js/runtime-main.00ead344.js",
     "runtime-main.js.map": "/chants-militaires-web/static/js/runtime-main.00ead344.js.map",
-    "static/js/2.a5597d02.chunk.js": "/chants-militaires-web/static/js/2.a5597d02.chunk.js",
-    "static/js/2.a5597d02.chunk.js.map": "/chants-militaires-web/static/js/2.a5597d02.chunk.js.map",
+    "static/js/2.6f190544.chunk.js": "/chants-militaires-web/static/js/2.6f190544.chunk.js",
+    "static/js/2.6f190544.chunk.js.map": "/chants-militaires-web/static/js/2.6f190544.chunk.js.map",
     "index.html": "/chants-militaires-web/index.html",
-    "precache-manifest.fc1e79dcc50409f05eb35256244bf6de.js": "/chants-militaires-web/precache-manifest.fc1e79dcc50409f05eb35256244bf6de.js",
+    "precache-manifest.90fa090a091bb3331cd00c6ace319c36.js": "/chants-militaires-web/precache-manifest.90fa090a091bb3331cd00c6ace319c36.js",
     "service-worker.js": "/chants-militaires-web/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/chants-militaires-web/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.a5597d02.chunk.js.LICENSE": "/chants-militaires-web/static/js/2.a5597d02.chunk.js.LICENSE"
+    "static/js/2.6f190544.chunk.js.LICENSE": "/chants-militaires-web/static/js/2.6f190544.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.00ead344.js",
-    "static/js/2.a5597d02.chunk.js",
+    "static/js/2.6f190544.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.b9987a5a.chunk.js"
+    "static/js/main.df2742e0.chunk.js"
   ]
 }
