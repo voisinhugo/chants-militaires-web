@@ -26,7 +26,7 @@ describe("MusicList", () => {
     expect(musicList).toMatchSnapshot();
   });
   it("should navigate to lyric page", () => {
-    const { getByText } = render(<MusicList />);
+    const { getByText } = renderPage(<MusicList />);
 
     const itemButton = getByText(song0Title);
     fireEvent.click(itemButton);
