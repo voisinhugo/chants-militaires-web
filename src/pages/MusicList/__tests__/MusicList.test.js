@@ -19,7 +19,7 @@ jest.mock("react-router-dom", () => ({
   })
 }));
 
-describe("MusicItem", () => {
+describe("MusicList", () => {
   it("should render", () => {
     const musicList = renderPage(<MusicList />);
 

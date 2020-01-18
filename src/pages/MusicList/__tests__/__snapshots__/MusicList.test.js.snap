@@ -1,31 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MusicItem should render 1`] = `
+exports[`MusicList should render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AykKE jxVPSR"
+        class="sc-AykKE bueGnU"
       >
         <h1
-          class="sc-AykKF dltmE"
+          class="sc-AykKF bDcxaF"
         >
           Liste des chants
         </h1>
       </div>
       <div
-        class="sc-AykKG cYNCoE"
+        class="sc-AykKH hMTifZ"
       >
-        <div
-          class="sc-AykKC hvfnPU"
-        >
-          <p
-            class="sc-AykKD cTiopU"
-          >
-            toto
-          </p>
-        </div>
         <div
           class="sc-AykKC hvfnPU"
         >
@@ -35,21 +26,30 @@ Object {
             tata
           </p>
         </div>
+        <div
+          class="sc-AykKC hvfnPU"
+        >
+          <p
+            class="sc-AykKD cTiopU"
+          >
+            toto
+          </p>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AykKE jxVPSR"
+      class="sc-AykKE bueGnU"
     >
       <h1
-        class="sc-AykKF dltmE"
+        class="sc-AykKF bDcxaF"
       >
         Liste des chants
       </h1>
     </div>
     <div
-      class="sc-AykKG cYNCoE"
+      class="sc-AykKH hMTifZ"
     >
       <div
         class="sc-AykKC hvfnPU"
@@ -57,7 +57,7 @@ Object {
         <p
           class="sc-AykKD cTiopU"
         >
-          toto
+          tata
         </p>
       </div>
       <div
@@ -66,7 +66,7 @@ Object {
         <p
           class="sc-AykKD cTiopU"
         >
-          tata
+          toto
         </p>
       </div>
     </div>
