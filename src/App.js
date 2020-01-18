@@ -7,6 +7,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path={"/"} component={MusicList} />
+        <Route exact path={"/song/:songId"} component={MusicView} />
       </Switch>
     </Router>
   );
