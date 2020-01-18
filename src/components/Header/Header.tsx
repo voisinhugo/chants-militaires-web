@@ -1,8 +1,13 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import styled from "styled-components";
 import theme from "../../theme";
 import { LeftArrow } from "../Icons";
 import { useHistory } from "react-router";
+
+interface Props {
+  title: string;
+  hasGoBack?: boolean;
+}
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -29,12 +34,16 @@ const BackArrow = styled(LeftArrow).attrs({
   margin: ${theme.margin.x1}px;
 `;
 
-export const Header = ({ title, hasGoBack }) => {
+export const Header: FunctionComponent<Props> = ({ title, hasGoBack }) => {
   const history = useHistory();
 
   return (
     <HeaderContainer>
-      {hasGoBack && <BackArrow onClick={() => history.goBack()} />}
+      {hasGoBack && (
+        <div onClick={() => history.goBack()}>
+          <BackArrow />
+        </div>
+      )}
       <HeaderTitle>{title}</HeaderTitle>
     </HeaderContainer>
   );

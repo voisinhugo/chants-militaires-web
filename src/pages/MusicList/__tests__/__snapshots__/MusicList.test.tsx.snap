@@ -1,48 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MusicView should render 1`] = `
+exports[`MusicList should render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AykKC gCrQWj"
+        class="sc-AykKE bueGnU"
       >
         <h1
-          class="sc-AykKD dxPPNa"
+          class="sc-AykKF bDcxaF"
         >
-          toto
+          Liste des chants
         </h1>
       </div>
       <div
-        class="sc-AykKE kqJmMC"
+        class="sc-AykKH hMTifZ"
       >
-        <p
-          class="sc-AykKF bBkDkV"
+        <div
+          class="sc-AykKC hvfnPU"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-        </p>
+          <p
+            class="sc-AykKD cTiopU"
+          >
+            tata
+          </p>
+        </div>
+        <div
+          class="sc-AykKC hvfnPU"
+        >
+          <p
+            class="sc-AykKD cTiopU"
+          >
+            toto
+          </p>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AykKC gCrQWj"
+      class="sc-AykKE bueGnU"
     >
       <h1
-        class="sc-AykKD dxPPNa"
+        class="sc-AykKF bDcxaF"
       >
-        toto
+        Liste des chants
       </h1>
     </div>
     <div
-      class="sc-AykKE kqJmMC"
+      class="sc-AykKH hMTifZ"
     >
-      <p
-        class="sc-AykKF bBkDkV"
+      <div
+        class="sc-AykKC hvfnPU"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-      </p>
+        <p
+          class="sc-AykKD cTiopU"
+        >
+          tata
+        </p>
+      </div>
+      <div
+        class="sc-AykKC hvfnPU"
+      >
+        <p
+          class="sc-AykKD cTiopU"
+        >
+          toto
+        </p>
+      </div>
     </div>
   </div>,
   "debug": [Function],

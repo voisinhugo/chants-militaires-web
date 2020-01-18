@@ -1,11 +1,14 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import styled from "styled-components";
 import { MusicItem } from "./components";
 import songs from "../../data";
 import theme from "../../theme";
 import { Header } from "../../components";
+import { Song } from "../../react-app-env";
 
-const sortedSongs = Object.values(songs).sort((a, b) => a.title > b.title);
+const sortedSongs = Object.values(songs).sort((a: Song, b: Song) =>
+  a.title > b.title ? 1 : -1
+);
 
 const ListContainer = styled.div`
   background-color: ${theme.color.background};
@@ -13,13 +16,13 @@ const ListContainer = styled.div`
   padding-bottom: ${theme.margin.x1}px;
 `;
 
-export const MusicList = () => {
+export const MusicList: FunctionComponent = () => {
   return (
     <>
       <Header title="Liste des chants" />
       <ListContainer>
-        {sortedSongs.map(item => (
-          <MusicItem key={item.id.toString()} item={item} />
+        {sortedSongs.map((item: Song) => (
+          <MusicItem key={item.id.toString()} song={item} />
         ))}
       </ListContainer>
     </>

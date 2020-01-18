@@ -4,4 +4,4 @@ export const PATHS = {
   song: "/song"
 };
 
-export const getPath = (path = "") => `${BASE_PATH}${path}`;
+export const getPath = (path: string = "") => `${BASE_PATH}${path}`;

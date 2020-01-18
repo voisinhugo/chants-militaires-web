@@ -1,5 +1,5 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { fireEvent } from "@testing-library/react";
 import { MusicList } from "../MusicList";
 import { renderPage } from "../../../tests/utils";
 
@@ -19,14 +19,14 @@ jest.mock("react-router-dom", () => ({
   })
 }));
 
-describe("MusicItem", () => {
+describe("MusicList", () => {
   it("should render", () => {
     const musicList = renderPage(<MusicList />);
 
     expect(musicList).toMatchSnapshot();
   });
   it("should navigate to lyric page", () => {
-    const { getByText } = render(<MusicList />);
+    const { getByText } = renderPage(<MusicList />);
 
     const itemButton = getByText(song0Title);
     fireEvent.click(itemButton);
