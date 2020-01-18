@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chants-militaires-web/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/chants-militaires-web/static/js/main.b276892d.chunk.js",
+    "main.js.map": "/chants-militaires-web/static/js/main.b276892d.chunk.js.map",
+    "runtime-main.js": "/chants-militaires-web/static/js/runtime-main.00ead344.js",
+    "runtime-main.js.map": "/chants-militaires-web/static/js/runtime-main.00ead344.js.map",
+    "static/js/2.4331350c.chunk.js": "/chants-militaires-web/static/js/2.4331350c.chunk.js",
+    "static/js/2.4331350c.chunk.js.map": "/chants-militaires-web/static/js/2.4331350c.chunk.js.map",
+    "index.html": "/chants-militaires-web/index.html",
+    "precache-manifest.4e00206b5049fbba813a911454e062a6.js": "/chants-militaires-web/precache-manifest.4e00206b5049fbba813a911454e062a6.js",
+    "service-worker.js": "/chants-militaires-web/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/chants-militaires-web/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.4331350c.chunk.js.LICENSE": "/chants-militaires-web/static/js/2.4331350c.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00ead344.js",
+    "static/js/2.4331350c.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.b276892d.chunk.js"
+  ]
+}
