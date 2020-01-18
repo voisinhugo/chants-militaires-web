@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import theme from "../../../theme";
 import { getPath, PATHS } from "../../../navigation/utils";
@@ -18,20 +18,18 @@ const MusicText = styled.p`
   font-size: ${theme.fontSize.heading}px;
 `;
 
-export const MusicItem = ({ item }) => (
-  <Route
-    render={({ history }) => {
-      const onItemPress = () => {
-        const musicId = item.id;
-        const path = `${PATHS.song}/${musicId}`;
-        history.push(`${getPath(path)}`);
-      };
+export const MusicItem = ({ item }) => {
+  const history = useHistory();
 
-      return (
-        <Container onClick={onItemPress}>
-          <MusicText>{item.title}</MusicText>
-        </Container>
-      );
-    }}
-  />
-);
+  const onItemPress = () => {
+    const musicId = item.id;
+    const path = `${PATHS.song}/${musicId}`;
+    history.push(`${getPath(path)}`);
+  };
+
+  return (
+    <Container onClick={onItemPress}>
+      <MusicText>{item.title}</MusicText>
+    </Container>
+  );
+};
