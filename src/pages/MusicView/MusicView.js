@@ -7,6 +7,8 @@ import { Header } from "../../components";
 
 const Container = styled.div`
   background-color: ${theme.color.background};
+  display: flex;
+  flex-grow: 1;
 `;
 
 const Lyrics = styled.p`
