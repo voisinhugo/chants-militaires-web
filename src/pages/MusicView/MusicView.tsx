@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import songs from "../../data";
@@ -22,15 +22,15 @@ const Lyrics = styled.p`
   white-space: pre-wrap;
 `;
 
-export const MusicView = ({ match }) => {
+export const MusicView: FunctionComponent = () => {
   const { songId } = useParams();
 
-  return (
+  return songId ? (
     <>
       <Header title={songs[songId].title} hasGoBack />
       <Container>
         <Lyrics>{songs[songId].lyrics}</Lyrics>
       </Container>
     </>
-  );
+  ) : null;
 };

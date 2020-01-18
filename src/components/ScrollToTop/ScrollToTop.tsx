@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, FunctionComponent } from "react";
 import { useHistory } from "react-router-dom";
 
-export const ScrollToTop = () => {
+export const ScrollToTop: FunctionComponent = () => {
   const history = useHistory();
 
   useEffect(() => {

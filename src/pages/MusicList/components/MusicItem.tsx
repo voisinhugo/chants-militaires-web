@@ -1,8 +1,13 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import theme from "../../../theme";
 import { getPath, PATHS } from "../../../navigation/utils";
+import { Song } from "../../../react-app-env";
+
+interface Props {
+  song: Song;
+}
 
 const Container = styled.div`
   background-color: ${theme.color.background};
@@ -18,18 +23,18 @@ const MusicText = styled.p`
   font-size: ${theme.fontSize.heading}px;
 `;
 
-export const MusicItem = ({ item }) => {
+export const MusicItem: FunctionComponent<Props> = ({ song }) => {
   const history = useHistory();
 
   const onItemPress = () => {
-    const musicId = item.id;
-    const path = `${PATHS.song}/${musicId}`;
+    const songId = song.id;
+    const path = `${PATHS.song}/${songId}`;
     history.push(`${getPath(path)}`);
   };
 
   return (
     <Container onClick={onItemPress}>
-      <MusicText>{item.title}</MusicText>
+      <MusicText>{song.title}</MusicText>
     </Container>
   );
 };
