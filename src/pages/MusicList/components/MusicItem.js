@@ -9,10 +9,13 @@ const Container = styled.div`
 `;
 
 const MusicText = styled.p`
-  margin-left: ${theme.margin.x2};
-  margin-vertical: ${theme.margin.x1};
+  margin-left: ${theme.margin.x2}px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-block-start: ${theme.margin.x1}px;
+  padding-block-end: ${theme.margin.x1}px;
   color: ${theme.color.white};
-  font-size: ${theme.fontSize.heading};
+  font-size: ${theme.fontSize.heading}px;
 `;
 
 export const MusicItem = ({ item }) => (
