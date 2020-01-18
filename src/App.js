@@ -2,10 +2,12 @@ import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { MusicList, MusicView } from "./pages";
 import { getPath, PATHS } from "./navigation/utils";
+import { ScrollToTop } from "./components";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route exact path={getPath()} component={MusicList} />
         <Route
