@@ -1,6 +1,7 @@
 import React from "react";
 import theme from "../../../theme";
 import styled from "styled-components";
+import { Route } from "react-router-dom";
 
 const Container = styled.div`
   background-color: ${theme.color.background};
@@ -13,16 +14,19 @@ const MusicText = styled.p`
   font-size: ${theme.fontSize.heading};
 `;
 
-export const MusicItem = ({ item }) => {
-  const onItemPress = () => {
-    const musicId = item.id;
-    console.log("musicId", musicId);
-    // navigation.navigate("MusicView", { musicId });
-  };
+export const MusicItem = ({ item }) => (
+  <Route
+    render={({ history }) => {
+      const onItemPress = () => {
+        const musicId = item.id;
+        history.push(`/song/${musicId}`);
+      };
 
-  return (
-    <Container onClick={onItemPress}>
-      <MusicText>{item.title}</MusicText>
-    </Container>
-  );
-};
+      return (
+        <Container onClick={onItemPress}>
+          <MusicText>{item.title}</MusicText>
+        </Container>
+      );
+    }}
+  />
+);
