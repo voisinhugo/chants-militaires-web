@@ -2,6 +2,7 @@ import React from "react";
 import theme from "../../../theme";
 import styled from "styled-components";
 import { Route } from "react-router-dom";
+import { getPath, PATHS } from "../../../navigation/utils";
 
 const Container = styled.div`
   background-color: ${theme.color.background};
@@ -19,7 +20,8 @@ export const MusicItem = ({ item }) => (
     render={({ history }) => {
       const onItemPress = () => {
         const musicId = item.id;
-        history.push(`/song/${musicId}`);
+        const path = `${PATHS.song}/${musicId}`;
+        history.push(`${getPath(path)}`);
       };
 
       return (
