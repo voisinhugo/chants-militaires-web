@@ -23,6 +23,7 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "cz-customizable": "^6.2.0",
     "gh-pages": "^2.2.0"
   },
   "eslintConfig": {
@@ -39,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   }
 }
