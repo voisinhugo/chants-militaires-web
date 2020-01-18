@@ -14,7 +14,7 @@ jest.mock("../../../data/index", () => ({
 
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
-  useParams: () => ({ songId: 0 })
+  useParams: () => ({ songId: "0" })
 }));
 
 describe("MusicView", () => {
