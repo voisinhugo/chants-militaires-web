@@ -25,7 +25,7 @@ export const MusicView = ({ match }) => {
 
   return (
     <>
-      <Header title={songs[songId].title} />
+      <Header title={songs[songId].title} hasGoBack />
       <Container>
         <Lyrics>{songs[songId].lyrics}</Lyrics>
       </Container>
