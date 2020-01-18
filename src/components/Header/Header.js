@@ -22,7 +22,10 @@ const HeaderTitle = styled.h1`
   margin-left: ${theme.margin.x1}px;
 `;
 
-const BackArrow = styled(LeftArrow)`
+const BackArrow = styled(LeftArrow).attrs({
+  size: theme.fontSize.title,
+  color: theme.color.white
+})`
   margin: ${theme.margin.x1}px;
 `;
 
@@ -31,13 +34,7 @@ export const Header = ({ title, hasGoBack }) => {
 
   return (
     <HeaderContainer>
-      {hasGoBack && (
-        <BackArrow
-          size={theme.fontSize.title}
-          color={theme.color.white}
-          onClick={() => history.goBack()}
-        />
-      )}
+      {hasGoBack && <BackArrow onClick={() => history.goBack()} />}
       <HeaderTitle>{title}</HeaderTitle>
     </HeaderContainer>
   );
