@@ -1,0 +1,21 @@
+name: Deploy-CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+      - name: Deploy
+        run: |
+          yarn
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          yarn deploy
