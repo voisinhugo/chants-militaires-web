@@ -5,6 +5,7 @@ import songs from "../../data";
 import theme from "../../theme";
 import { Header } from "../../components";
 import { Song } from "../../react-app-env";
+import { HEADER_HEIGHT } from "../../components/Header";
 
 const sortedSongs = Object.values(songs).sort((a: Song, b: Song) =>
   a.title > b.title ? 1 : -1
@@ -12,7 +13,7 @@ const sortedSongs = Object.values(songs).sort((a: Song, b: Song) =>
 
 const ListContainer = styled.div`
   background-color: ${theme.color.background};
-  padding-top: ${theme.margin.x1}px;
+  padding-top: ${theme.margin.x1 + HEADER_HEIGHT}px;
   padding-bottom: ${theme.margin.x1}px;
 `;
 

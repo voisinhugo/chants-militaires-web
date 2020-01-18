@@ -4,6 +4,8 @@ import theme from "../../theme";
 import { LeftArrow } from "../Icons";
 import { useHistory } from "react-router";
 
+export const HEADER_HEIGHT = 60;
+
 interface Props {
   title: string;
   hasGoBack?: boolean;
@@ -15,6 +17,9 @@ const HeaderContainer = styled.div`
   align-items: center;
   background-color: ${theme.color.header};
   padding-left: ${theme.margin.x1}px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 `;
 
 const HeaderTitle = styled.h1`
@@ -27,12 +32,15 @@ const HeaderTitle = styled.h1`
   margin-left: ${theme.margin.x1}px;
 `;
 
+const BackArrowContainer = styled.div`
+  display: flex;
+  margin: ${theme.margin.x1}px;
+`;
+
 const BackArrow = styled(LeftArrow).attrs({
   size: theme.fontSize.title,
   color: theme.color.white
-})`
-  margin: ${theme.margin.x1}px;
-`;
+})``;
 
 export const Header: FunctionComponent<Props> = ({ title, hasGoBack }) => {
   const history = useHistory();
@@ -40,9 +48,9 @@ export const Header: FunctionComponent<Props> = ({ title, hasGoBack }) => {
   return (
     <HeaderContainer>
       {hasGoBack && (
-        <div onClick={() => history.goBack()}>
+        <BackArrowContainer onClick={() => history.goBack()}>
           <BackArrow />
-        </div>
+        </BackArrowContainer>
       )}
       <HeaderTitle>{title}</HeaderTitle>
     </HeaderContainer>
