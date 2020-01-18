@@ -6,9 +6,11 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AykKC AKBHS"
+        class="sc-AykKC hnbul"
       >
-        <div>
+        <div
+          class="sc-AykKE ffMrwK"
+        >
           <svg
             height="24"
             viewBox="0 0 492 492"
@@ -27,10 +29,10 @@ Object {
         </h1>
       </div>
       <div
-        class="sc-AykKF cFkEbq"
+        class="sc-AykKG gchGMy"
       >
         <p
-          class="sc-AykKG dGWVQq"
+          class="sc-AykKH fMJovL"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
         </p>
@@ -39,9 +41,11 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AykKC AKBHS"
+      class="sc-AykKC hnbul"
     >
-      <div>
+      <div
+        class="sc-AykKE ffMrwK"
+      >
         <svg
           height="24"
           viewBox="0 0 492 492"
@@ -60,10 +64,10 @@ Object {
       </h1>
     </div>
     <div
-      class="sc-AykKF cFkEbq"
+      class="sc-AykKG gchGMy"
     >
       <p
-        class="sc-AykKG dGWVQq"
+        class="sc-AykKH fMJovL"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
       </p>
