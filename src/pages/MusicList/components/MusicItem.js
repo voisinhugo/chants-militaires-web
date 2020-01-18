@@ -1,7 +1,7 @@
 import React from "react";
-import theme from "../../../theme";
-import styled from "styled-components";
 import { Route } from "react-router-dom";
+import styled from "styled-components";
+import theme from "../../../theme";
 import { getPath, PATHS } from "../../../navigation/utils";
 
 const Container = styled.div`

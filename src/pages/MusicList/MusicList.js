@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import songs from "../../data";
 import { MusicItem } from "./components";
+import songs from "../../data";
 import theme from "../../theme";
 
 const sortedSongs = Object.values(songs).sort((a, b) => a.title > b.title);
