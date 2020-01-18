@@ -15,6 +15,9 @@ const HeaderContainer = styled.div`
   align-items: center;
   background-color: ${theme.color.header};
   padding-left: ${theme.margin.x1}px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 `;
 
 const HeaderTitle = styled.h1`
