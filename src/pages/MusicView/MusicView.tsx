@@ -25,7 +25,7 @@ const Lyrics = styled.p`
 export const MusicView: FunctionComponent = () => {
   const { songId } = useParams();
 
-  return songId ? (
+  return songId !== undefined ? (
     <>
       <Header title={songs[songId].title} hasGoBack />
       <Container>
