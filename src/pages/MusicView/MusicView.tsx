@@ -36,7 +36,7 @@ export const MusicView: FunctionComponent = () => {
 
   return (
     <>
-      <Header title={title} hasGoBack />
+      <Header title={title} leftComponent="go-back" />
       <Container>
         <Lyrics>{lyrics}</Lyrics>
         {url && <AudioPlayer url={url} />}
