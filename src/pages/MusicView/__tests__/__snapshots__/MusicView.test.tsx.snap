@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AykKC bOsqKk"
+        class="sc-AykKD fsdBGl"
       >
         <div
-          class="sc-AykKE ffMrwK"
+          class="sc-AykKF fXREXz"
         >
           <svg
             height="24"
@@ -23,16 +23,16 @@ Object {
           </svg>
         </div>
         <h1
-          class="sc-AykKD jTFMyn"
+          class="sc-AykKE dKCtoi"
         >
           toto
         </h1>
       </div>
       <div
-        class="sc-AykKH kSUNdV"
+        class="sc-AykKI bOFjJW"
       >
         <p
-          class="sc-AykKI hSvHbg"
+          class="sc-AykKJ jYhZGB"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
         </p>
@@ -41,10 +41,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AykKC bOsqKk"
+      class="sc-AykKD fsdBGl"
     >
       <div
-        class="sc-AykKE ffMrwK"
+        class="sc-AykKF fXREXz"
       >
         <svg
           height="24"
@@ -58,16 +58,16 @@ Object {
         </svg>
       </div>
       <h1
-        class="sc-AykKD jTFMyn"
+        class="sc-AykKE dKCtoi"
       >
         toto
       </h1>
     </div>
     <div
-      class="sc-AykKH kSUNdV"
+      class="sc-AykKI bOFjJW"
     >
       <p
-        class="sc-AykKI hSvHbg"
+        class="sc-AykKJ jYhZGB"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
       </p>
