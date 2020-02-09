@@ -4,11 +4,13 @@ import styled from "styled-components";
 import songs from "../../data";
 import theme from "../../theme";
 import { Header, HEADER_HEIGHT } from "../../components/Header/Header";
+import { AudioPlayer } from "../../components/AudioPlayer";
 
 const Container = styled.div`
   background-color: ${theme.color.background};
   display: flex;
   flex-grow: 1;
+  flex-direction: column;
   padding-top: ${HEADER_HEIGHT}px;
 `;
 
@@ -26,12 +28,19 @@ const Lyrics = styled.p`
 export const MusicView: FunctionComponent = () => {
   const { songId } = useParams();
 
-  return songId !== undefined ? (
+  if (!songId || !songs[songId]) {
+    return null;
+  }
+
+  const { title, lyrics, url } = songs[songId];
+
+  return (
     <>
-      <Header title={songs[songId].title} hasGoBack />
+      <Header title={title} hasGoBack />
       <Container>
-        <Lyrics>{songs[songId].lyrics}</Lyrics>
+        <Lyrics>{lyrics}</Lyrics>
+        {url && <AudioPlayer url={url} />}
       </Container>
     </>
-  ) : null;
+  );
 };
