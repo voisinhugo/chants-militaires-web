@@ -7,8 +7,8 @@ interface Props {
   url: string;
 }
 
-const PLAYER_WIDTH = 300;
-const PLAYER_HEIGHT = 150;
+const PLAYER_WIDTH = window.innerWidth - theme.margin.x2 * 2;
+const PLAYER_HEIGHT = 160;
 
 const StyledPlayer = styled(Player).attrs({
   width: PLAYER_WIDTH,
