@@ -1,13 +1,24 @@
 import React from "react";
 import Player from "react-player";
 import theme from "../../theme";
+import styled from "styled-components";
 
 interface Props {
   url: string;
 }
 
+const PLAYER_WIDTH = 300;
+const PLAYER_HEIGHT = 150;
+
+const StyledPlayer = styled(Player).attrs({
+  width: PLAYER_WIDTH,
+  height: PLAYER_HEIGHT
+})`
+  margin: ${theme.margin.x2}px;
+`;
+
 export const AudioPlayer = ({ url }: Props) => (
-  <Player
+  <StyledPlayer
     url={url}
     soundcloudConfig={{
       options: {
