@@ -42,7 +42,7 @@ export const MusicList: FunctionComponent = () => {
 
   return (
     <>
-      <Header title="Liste des chants" />
+      <Header title="Liste des chants" leftComponent="burger-menu" />
       <ListContainer>
         <SearchBar options={options} onFieldSelect={onSongSelect} />
         <Separator />
