@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0a21fe8add90d4a97d0a5e8fd06a316",
+    "revision": "0b8a6f73d3d410cf9a2bd03fd47a01cd",
     "url": "/chants-militaires-web/index.html"
   },
   {
-    "revision": "2d75c593ffc121d7948c",
+    "revision": "63fdd4e1bd70b0aa352c",
     "url": "/chants-militaires-web/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chants-militaires-web/static/js/2.b7655e17.chunk.js.LICENSE"
   },
   {
-    "revision": "2d75c593ffc121d7948c",
-    "url": "/chants-militaires-web/static/js/main.2c869535.chunk.js"
+    "revision": "63fdd4e1bd70b0aa352c",
+    "url": "/chants-militaires-web/static/js/main.7c54658d.chunk.js"
   },
   {
     "revision": "d1c89c68e66b547d7197",
