@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chants-militaires-web/precache-manifest.7771500a66f2b5445b0009160f1ab90a.js"
+  "/chants-militaires-web/precache-manifest.804a0ee52a4dfd046944c6d7741d3f10.js"
 );
 
 self.addEventListener('message', (event) => {
